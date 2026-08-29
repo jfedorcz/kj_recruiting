@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kj-recruiting
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeployTrigger: commit
+    headers:
+      - path: /data/stats.json
+        name: Cache-Control
+        value: no-store, max-age=0

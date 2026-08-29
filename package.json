@@ -1,0 +1,11 @@
+{
+  "name": "kj-recruiting",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-stats": "node scripts/sync-stats.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}
