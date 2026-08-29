@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-08-29T12:45:00.000Z",
+  "sources": {
+    "maxpreps": {
+      "status": "verified",
+      "checkedAt": "2026-08-29T12:45:00.000Z",
+      "sourceUpdatedAt": "2026-05-11T22:07:00.000Z"
+    },
+    "hudl": {
+      "status": "linked",
+      "checkedAt": null
+    },
+    "chsaa": {
+      "status": "linked",
+      "checkedAt": null
+    }
+  },
+  "volleyball": {
+    "sets": 78,
+    "kills": 156,
+    "killsPerSet": 2,
+    "killPercentage": 45.6,
+    "attackAttempts": 342,
+    "hittingErrors": 44,
+    "hittingPercentage": 0.327,
+    "soloBlocks": 10,
+    "blockAssists": 63,
+    "totalBlocks": 73,
+    "blocksPerSet": 0.9
+  },
+  "basketball": {
+    "pointsPerGame": 5.6,
+    "totalPoints": 123,
+    "reboundsPerGame": 4.7,
+    "totalRebounds": 104,
+    "fieldGoalPercentage": 54,
+    "fieldGoalsMade": 47,
+    "fieldGoalsAttempted": 87,
+    "twoPointMade": 47,
+    "twoPointAttempted": 85,
+    "freeThrowsMade": 29,
+    "freeThrowsAttempted": 39,
+    "freeThrowPercentage": 74,
+    "blocks": 12,
+    "blocksPerGame": 0.5,
+    "assistsPerGame": 0.9,
+    "stealsPerGame": 0.5
+  }
+}
