@@ -3,11 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kurt Fedorczyk Recruiting Dashboard — Video Test</title>
+  <title>Kurt Fedorczyk Recruiting Profile | Class of 2028</title>
   <style>
     html { color-scheme: light dark; background: light-dark(#ffffff, #181818); }
     body { margin: 0; padding: 16px; background: inherit; }
   </style>
+<style>
+#kurt-recruiting-dashboard .recruit-coach-summary {display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;margin:24px;border:2px solid var(--recruit-gold);border-radius:14px;background:var(--recruit-surface-2);}
+#kurt-recruiting-dashboard .recruit-coach-summary p {line-height:1.6;margin:8px 0;}
+#kurt-recruiting-dashboard .recruit-watch {display:inline-block;flex-shrink:0;padding:16px 20px;border-radius:10px;background:var(--recruit-gold);color:var(--recruit-bg);font-weight:700;text-decoration:none;}
+#kurt-recruiting-dashboard .recruit-watch:focus-visible {outline:3px solid var(--recruit-cyan);outline-offset:4px;}
+@media(max-width:700px){#kurt-recruiting-dashboard .recruit-coach-summary{flex-direction:column;align-items:stretch;padding:18px;}#kurt-recruiting-dashboard .recruit-watch{text-align:center;}}
+</style>
 </head>
 <body>
 <div id="kurt-recruiting-dashboard">
@@ -409,10 +416,14 @@
     </div>
   </header>
 
+    <section class="recruit-coach-summary" aria-labelledby="coach-snapshot">
+      <div><p class="recruit-caption">COLLEGE COACH QUICK LOOK</p><h2 id="coach-snapshot">2028 · Opposite / Middle Blocker</h2><p><strong>6′6″ · 190 lb</strong> &nbsp; Denver, Colorado · D’Evelyn High School</p><p>2026 Honorable Mention All-State · First Team All-Conference · Class 4A state finalist</p></div>
+      <a class="recruit-watch" href="https://www.hudl.com/profile/24949040/Kurt-Fedorczyk/highlights" target="_blank" rel="noreferrer">Watch Kurt’s highlights ↗</a>
+    </section>
   <section class="recruit-hero" aria-label="Athlete introduction and highlight reel">
     <div class="recruit-video">
       <video class="recruit-highlight-video" id="recruit-highlight-video" controls playsinline preload="metadata" src="media/forge-christian-15-kills.mp4" aria-label="Kurt Fedorczyk volleyball highlights"></video>
-      <p class="recruit-video-status" id="recruit-video-status" role="status" hidden>Video clips are being added. Use the Hudl link above to watch the full highlight reel.</p>
+      <p class="recruit-video-status" id="recruit-video-status" role="status" hidden>Watch the available match highlights on Hudl using the highlighted link above.</p>
       <svg class="recruit-court-art" viewBox="0 0 900 520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized multi-sport highlight poster">
         <defs>
           <linearGradient id="courtGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#43d3ee" stop-opacity=".52"/><stop offset="1" stop-color="#f6bd45" stop-opacity=".25"/></linearGradient>
@@ -464,18 +475,19 @@
     <div class="recruit-profile">
       <div class="recruit-number" id="recruit-number">#26 · Class of 2028</div>
       <h1>Kurt<br>Fedorczyk</h1>
-      <div class="recruit-position" id="recruit-position">Middle Blocker / Opposite · D’Evelyn High School</div>
+      <div class="recruit-position" id="recruit-position">Opposite / Middle Blocker · D’Evelyn High School</div>
       <div class="recruit-tags">
         <span class="recruit-tag">6'6"</span>
         <span class="recruit-tag">190 lb</span>
         <span class="recruit-tag">Denver, Colorado</span>
         <span class="recruit-tag">Right-handed</span>
       </div>
-      <p class="recruit-profile-note" id="recruit-profile-note">Efficient front-row scorer and high-volume blocker with verified top-10 Class 4A rankings in both total blocks and hitting percentage.</p>
+      <p class="recruit-profile-note" id="recruit-profile-note">Class of 2028 opposite and middle blocker at D’Evelyn High School. 2026 CHSAA Class 4A Honorable Mention All-State and state finalist.</p>
     </div>
   </section>
 
   <main class="recruit-main">
+
     <div class="recruit-sport-view" data-sport-view="volleyball">
     <div class="recruit-section-head">
       <div><h2>2025–26 varsity performance</h2><p class="recruit-caption">Coach-entered MaxPreps totals · <span data-stat="volleyball.sets">78</span> sets played · <span data-stats-updated>verified May 11, 2026</span></p></div>
@@ -488,11 +500,12 @@
 
     <div class="recruit-panel" data-panel-content="overview" aria-live="polite">
       <div class="recruit-stat-grid">
-        <div class="recruit-stat"><div class="recruit-stat-label">Total blocks</div><div class="recruit-stat-value" data-stat="volleyball.totalBlocks">73</div><div class="recruit-stat-rank">Coach-entered MaxPreps total</div></div>
-        <div class="recruit-stat"><div class="recruit-stat-label">Hitting percentage</div><div class="recruit-stat-value" data-stat="volleyball.hittingPercentage" data-format="decimal3">.327</div><div class="recruit-stat-rank">Net attacking efficiency</div></div>
-        <div class="recruit-stat"><div class="recruit-stat-label">Kills</div><div class="recruit-stat-value" data-stat="volleyball.kills">156</div><div class="recruit-stat-rank">Coach-entered MaxPreps total</div></div>
-        <div class="recruit-stat"><div class="recruit-stat-label">Kills per set</div><div class="recruit-stat-value" data-stat="volleyball.killsPerSet" data-format="decimal1">2.0</div><div class="recruit-stat-rank"><span data-stat="volleyball.killPercentage" data-format="percent1">45.6%</span> of attacks</div></div>
+        <div class="recruit-stat"><div class="recruit-stat-label">Kills / set</div><div class="recruit-stat-value" data-stat="volleyball.killsPerSet" data-format="decimal2">2.00</div><div class="recruit-stat-rank">156 kills · 78 sets</div></div>
+        <div class="recruit-stat"><div class="recruit-stat-label">Blocks / set</div><div class="recruit-stat-value" data-stat="volleyball.blocksPerSet" data-format="decimal2">0.94</div><div class="recruit-stat-rank">73 total blocks · 78 sets</div></div>
+        <div class="recruit-stat"><div class="recruit-stat-label">Aces / set</div><div class="recruit-stat-value">0.03</div><div class="recruit-stat-rank">2 aces · 78 sets · 7 serve attempts</div></div>
+        <div class="recruit-stat"><div class="recruit-stat-label">Hitting percentage</div><div class="recruit-stat-value" data-stat="volleyball.hittingPercentage" data-format="decimal3">.327</div><div class="recruit-stat-rank">(156 kills − 44 errors) ÷ 342 attempts</div></div>
       </div>
+      <p class="recruit-caption">D’Evelyn high school varsity · 2025–26 · 78 sets. These are high-school results, not club Hudl Assist statistics. Rates are calculated from season totals; serving opportunities were limited.</p>
     </div>
     <div class="recruit-panel" data-panel-content="attacking" hidden aria-live="polite">
       <div class="recruit-stat-grid">
@@ -599,7 +612,7 @@
           <h2 id="recruit-basket-highlights-heading">Basketball profile</h2>
           <div class="recruit-honor"><div class="recruit-honor-icon"><i data-lucide="shield" aria-hidden="true"></i></div><div><strong>Team leader in blocks</strong><span>12 total · 0.5 per game</span></div></div>
           <div class="recruit-honor"><div class="recruit-honor-icon"><i data-lucide="circle-dot" aria-hidden="true"></i></div><div><strong>Efficient interior scorer</strong><span>54% field goals · 55% on two-pointers</span></div></div>
-          <div class="recruit-honor"><div class="recruit-honor-icon"><i data-lucide="repeat-2" aria-hidden="true"></i></div><div><strong>Two-sport varsity athlete</strong><span>Basketball center/forward · Volleyball MB/OPP</span></div></div>
+          <div class="recruit-honor"><div class="recruit-honor-icon"><i data-lucide="repeat-2" aria-hidden="true"></i></div><div><strong>Two-sport varsity athlete</strong><span>Basketball center/forward · Volleyball OPP/MB</span></div></div>
         </section>
       </div>
     </div>
@@ -641,8 +654,8 @@
           total: 125,
           duration: '2:05',
           number: '#26 · Class of 2028',
-          position: 'Middle Blocker / Opposite · D’Evelyn High School',
-          note: 'Efficient front-row scorer and high-volume blocker with verified top-10 Class 4A rankings in both total blocks and hitting percentage.',
+          position: 'Opposite / Middle Blocker · D’Evelyn High School',
+          note: 'Class of 2028 opposite and middle blocker at D’Evelyn High School. 2026 CHSAA Class 4A Honorable Mention All-State and state finalist.',
           maxPreps: 'https://www.maxpreps.com/co/denver/develyn-jaguars/athletes/kurt-fedorczyk/volleyball/boys/stats/?careerid=5ueu37hf44fee',
           chsaa: 'https://chsaanow.com/news/2026/05/18/boys-volleyball-all-state-teams-for-2026-season-announced',
           chapters: [
@@ -791,6 +804,7 @@
       const readPath = (object, path) => path.split('.').reduce((value, part) => value?.[part], object);
       const formatStat = (value, format) => {
         if (format === 'decimal3') return Number(value).toFixed(3).replace(/^0/, '');
+        if (format === 'decimal2') return Number(value).toFixed(2);
         if (format === 'decimal1') return Number(value).toFixed(1);
         if (format === 'percent1') return `${Number(value).toFixed(1)}%`;
         if (format === 'percent0') return `${Math.round(Number(value))}%`;
@@ -802,6 +816,10 @@
           return response.json();
         })
         .then((stats) => {
+          if (stats.volleyball?.sets > 0) {
+            stats.volleyball.blocksPerSet = stats.volleyball.totalBlocks / stats.volleyball.sets;
+            stats.volleyball.killsPerSet = stats.volleyball.kills / stats.volleyball.sets;
+          }
           root.querySelectorAll('[data-stat]').forEach((element) => {
             const value = readPath(stats, element.dataset.stat);
             if (typeof value === 'number' && Number.isFinite(value)) {
